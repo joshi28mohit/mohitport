@@ -1,3 +1,9 @@
+.fa-regular.sdmnu{
+    display: none;
+}
+.fa-solid.sdmnu{
+    display: none;
+}
 *{
     margin:0;
     padding: 0;
@@ -13,6 +19,7 @@ body{
     background-color: #080808;
     color: white;
 }
+
 #header{
     width:100%;
     height:100vh;
@@ -373,14 +380,20 @@ footer>p>i{
 }
 /* -----------css for smaal screens--------------- */
 
-.fass{
-    display: none;
-}
 /* nav>i{
     display: none;
 } */
 
 @media only screen and (max-width:600px){
+    .fa-regular.sdmnu{
+        display: block;
+        font-size: 25px;
+        padding-left: 23px;
+    }
+    .fa-solid.sdmnu{
+        display: block;
+        font-size: 25px;
+    }
     #header{
         background-image: url(images/mobileview.jpg);
     }
@@ -393,10 +406,7 @@ footer>p>i{
     .header-text>h1{
         font-size: 30px;
     }
-    .fass{
-        display: block;
-        font-size: 25px;
-    }
+    
     /* nav>i{
         display: block;
         font-size: 25px;
