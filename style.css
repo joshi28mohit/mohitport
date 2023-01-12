@@ -378,6 +378,9 @@ form>.btn2{
 footer>p>i{
     color: #ff004f;
 }
+.welweb{
+    display: block;
+}
 /* -----------css for smaal screens--------------- */
 
 /* nav>i{
@@ -385,6 +388,9 @@ footer>p>i{
 } */
 
 @media only screen and (max-width:600px){
+    .welweb{
+        display: none;
+    }
     .fa-regular.sdmnu{
         display: block;
         font-size: 25px;
@@ -399,7 +405,7 @@ footer>p>i{
     }
 
     .header-text{
-        margin-top: 120px;
+        margin-top: 150px;
         font-size: 16px;
         text-align: left;
     }
