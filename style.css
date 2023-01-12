@@ -372,9 +372,13 @@ footer>p>i{
     color: #ff004f;
 }
 /* -----------css for smaal screens--------------- */
-.mvicon{
+
+.fass{
     display: none;
 }
+/* nav>i{
+    display: none;
+} */
 
 @media only screen and (max-width:600px){
     #header{
@@ -389,10 +393,15 @@ footer>p>i{
     .header-text>h1{
         font-size: 30px;
     }
-    .mvicon{
+    .fass{
         display: block;
         font-size: 25px;
     }
+    /* nav>i{
+        display: block;
+        font-size: 25px;
+    } */
+
     nav>ul{
         background: #ff004f;
         position: fixed;
