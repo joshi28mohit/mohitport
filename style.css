@@ -372,7 +372,7 @@ footer>p>i{
     color: #ff004f;
 }
 /* -----------css for smaal screens--------------- */
-.fass{
+.mvicon{
     display: none;
 }
 
@@ -389,7 +389,7 @@ footer>p>i{
     .header-text>h1{
         font-size: 30px;
     }
-    .fass{
+    .mvicon{
         display: block;
         font-size: 25px;
     }
