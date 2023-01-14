@@ -15,7 +15,7 @@
         <div class="container">
             <nav>
                 <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
-                <h1 id="mohitintro"><span style="color: #ff004f; font-size: 50px;">P</span><span
+                <h1 id="mohitintro"><span style="color:darkgoldenrod; font-size: 50px;">P</span><span
                         style="font-size: 40px;">ortfolio.</span>
                 </h1>
                 <ul id="sidemenu">
@@ -29,7 +29,7 @@
                 <i class="fa-solid fa-bars sdmnu" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <!-- <p>Web Developer</p> -->
                 <h1>Hello Everyone!<br> My name is <span>Mohit</span><br><span class="welweb">Welcome To My
                         website</span></h1>
             </div>
@@ -132,6 +132,7 @@
             </div>
         </div>
     </div>
+    <br><br>
     <!-- -------------------portfolio-------------- -->
     <div id="projects">
         <div class="container">
@@ -177,15 +178,19 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contace Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>b210055@nitsikkim.ac.in</p>
-                    <p><i class="fa-solid fa-phone"></i>6296995093</p>
+                    <p><a href="b210055@nitsikkim.ac.in" style="font-size: 25px; color: darkorange;"><i
+                                class="fa-solid fa-paper-plane"
+                                style="padding-right: 14px;"></i></a>b210055@nitsikkim.ac.in</p>
+                    <p><a href="tel:+916296995093" style="font-size: 25px; color: darkorange;"><i
+                                class="fa-solid fa-phone" style="padding-right: 14px;"></i></a>6296995093</p>
                     <div class="social">
                         <a target="_blank" href="https://www.linkedin.com/in/mohit-joshi-38a683243/"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a id="insta"><i class="fa-brands fa-square-instagram"></i></a>
                         <a target="_blank" href="https://twitter.com/MohitJo26880942"><i
                                 class="fa-brands fa-square-twitter"></i></a>
-                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://github.com/joshi28mohit"><i
+                                class="fa-brands fa-square-github"></i></a>
                     </div>
                     <a href="images/My-CV.pdf" download class="btn btn2">Download My CV</a>
                 </div>
@@ -195,7 +200,8 @@
                         <input type="text" name="text" id="" placeholder="Name">
                         <input type="email" name="email" id="" placeholder="example@example.com">
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn btn2" id="sbtbtn"
+                            onclick="document.getElementById('insta').innerHTML=confirm('Not Available till now!! TRY AGAIN LATER');">Submit</button>
                     </form>
                 </div>
             </div>
