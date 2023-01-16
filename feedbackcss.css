@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    /* background-image: url(images/sky3\ \(3\).jpg); */
+    background-color: skyblue;
+    background-position: center;
+    background-size: cover;
+}
+
+.highway {
+    height: 200px;
+    display: block;
+    width: 500%;
+    background-image: url(images/road.jpg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+    background-repeat: repeat-x;
+    animation: hw 5s linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes hw {
+    100% {
+        transform: translateX(-3400px);
+    }
+}
+
+.city {
+    background-image: url(images/city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    height: 250px;
+    width: 500%;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+.car {
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    z-index: 2;
+    position: absolute;
+}
+
+.car>img {
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car {
+    100% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
+.wheel {
+    position: absolute;
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel>img {
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.back-wheel {
+    left: -165px;
+    position: absolute;
+}
+
+.front-wheel {
+    left: 80px;
+    position: absolute;
+}
+.content{
+    text-align: center; 
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 30px;
+    color: rgb(56, 45, 45);
+}
+.content:hover{
+    color: black;
+}
+.navv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background:linear-gradient(rgba(0,0,0),skyblue);
+}
+
+.navv>h1{
+    padding-left: 50px;
+}
+
+.navv>ul>li{
+    display: inline;
+    padding: 30px;
+} 
+body{
+    background-color: black;
+}
+form{
+    display: block; 
+    width: 400px; 
+    margin:auto; 
+    margin-top: 50px; 
+    border: 2px solid darkorange; 
+    padding: 30px;
+    box-shadow: 0 0 50px darkgoldenrod;
+    border-radius: 20px;
+    background-color:rgb(26, 25, 24)
+}
+
+form>label{
+    display: block;
+    font-size: 20px; 
+    color: white;
+}
+form>input{
+    display: block; 
+    width: 400px; 
+    height:20px;
+    border-radius: 10px;
+    background-color: rgb(185, 149, 58);
+}
+form>textarea{
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(185, 149, 58);
+}
+form>button{
+    transition: transform 0.5s;
+    background-color: rgb(206, 177, 103);
+    margin-top: 10px; 
+    padding: 6px;
+    border-radius: 7px;
+    margin-left: 346px;
+}
+
+form>button:hover{
+    background-color: darkorange;
+    color:white;
+    transform: scale(1.1);
+}
+.navv>ul>li>a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navv>h1{
+    transition: transform 0.5s;
+}
+.navv>h1:hover{
+    transform: scale(1.1);
+}
+.navv>ul>li>a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    /* background:#ff004f; */
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 859px;
+    top: 70px;
+    right: 10;
+    transition: 0.5s;
+    z-index: 3;
+}
+.navv>ul>li>a:hover::after{
+    /* margin-left: 50px; */
+    width: 28%;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+footer>p>i{
+    /* color: #ff004f; */
+    color: darkorange;
+}
+
+/* -------------Responsive------------ */
+@media only screen and (max-width:600px)
+{
+    .content{
+        color: red;
+    }
+}
