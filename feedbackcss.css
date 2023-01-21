@@ -26,14 +26,13 @@
     z-index: 1;
     position: absolute;
     background-repeat: repeat-x;
-    animation: hw 5s linear;
-    animation-iteration-count: infinite;
+    animation: hw 20s linear infinite;  
 
 }
 
 @keyframes hw {
     100% {
-        transform: translateX(-3400px);
+        transform: translateX(-5000px);
     }
 }
 
@@ -164,7 +163,7 @@ form>label{
 form>input{
     display: block; 
     width: 400px; 
-    height:20px;
+    height:25px;
     border-radius: 10px;
     background-color: rgb(185, 149, 58);
 }
@@ -191,6 +190,7 @@ form>button:hover{
     color:white;
     text-decoration: none;
     font-size: 20px;
+    position: relative;
 }
 .navv>h1{
     transition: transform 0.5s;
@@ -203,17 +203,16 @@ form>button:hover{
     width: 0;
     height: 3px;
     /* background:#ff004f; */
-    background: rgb(0, 0, 0);
+    background: darkorange;
     position: absolute;
-    left: 859px;
-    top: 70px;
-    right: 10;
+    left: 0;
+    bottom: -6px;
     transition: 0.5s;
     z-index: 3;
 }
 .navv>ul>li>a:hover::after{
     /* margin-left: 50px; */
-    width: 28%;
+    width: 100%;
 }
 
 *{
@@ -224,11 +223,89 @@ footer>p>i{
     /* color: #ff004f; */
     color: darkorange;
 }
+#feedback{
+    font-size: 40px;  
+    color: darkorange; 
+    text-decoration: underline; 
+    padding: 30px 43%; 
+    font-weight: bold;
+}
+.fa-regular.sdm{
+    display: none;
+}
+.fa-solid.sdm{
+    display: none;
+}
+.boardd{
+    bottom:200px; 
+    width: 700px; 
+    height: 180px; 
+    margin-top: 140px; 
+    right: 650px; 
+    position: absolute;
+
+}
 
 /* -------------Responsive------------ */
 @media only screen and (max-width:600px)
 {
     .content{
         color: red;
+    }
+    form{
+        width: 80%;
+    }
+    form>input,form>textarea{
+        width: 100%;
+    }
+    form>button{
+        margin-left: 0;
+    }
+    footer{
+        width: 100%;
+    }
+    #feedback{
+        text-align: center;
+        color: darkgoldenrod;
+        /* text-align: center; */
+    }
+    .fa-regular.sdm{
+        display: block;
+        font-size: 25px;
+        padding-left: 23px;
+    }
+    .fa-solid.sdm{
+        padding-right: 5px;
+        display: block;
+        font-size: 25px;
+    }
+    .boardd{
+        bottom:200px; 
+        width:150%; 
+        height: 180px; 
+        margin-top: 140px; 
+        left: 0; 
+        position: absolute;
+    }
+    nav>div>ul{
+        /* background: #ff004f; */
+        background: linear-gradient(black,darkorange);
+        position: fixed;
+        top:0;
+        right: -200px; 
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 3;
+        transition: right 0.8s;
+    }
+    nav>ul>li{
+        display: block;
+        margin: 25px;
+    }
+    .navv>ul>i{
+        position: absolute;
+        right: 10px;
+        top: 30px;
     }
 }
